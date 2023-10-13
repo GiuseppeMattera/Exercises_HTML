@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+      .plane_div {
+        display: flex;
+        flex-direction: row;
+      }
+      input:invalid {
+        border: 1px solid red;
+      }
+      input:valid {
+        border: 1px solid black;
+      }
+      .legend_class {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend class="legend_class">Please insert your data</legend>
+      <div>
+        <form>
+          <div>
+            <label for="Name">
+              Name<abbr title="required">*</abbr>
+            </label>
+            <input type="text" name="Name" placeholder="Es. John" required pattern="[A-Za-z]+" 
+                  minlength="2" maxlength="20">
+          </div>  
+          <div>
+              <label for="Lastname">
+                Lastname<abbr title="required">*</abbr>
+              </label>
+              <input type="text" name="Lastname" placeholder="Es. Smith" required pattern="[A-Za-z]+" 
+                    minlength="2" maxlength="20">
+          </div>
+          <div>
+            <label for="Birth_date">
+              Birth date<abbr title="required">*</abbr>
+            </label>
+            <input type="date" name="Birth_date" required>
+          </div>
+          <div>
+              <label for="E-mail">
+                E-mail<abbr title="required">*</abbr>
+              </label>
+              <input type="email" name="E-mail" placeholder="johnsmith@gmail.com" required>
+          </div>
+          <div>
+              <label for="Password">
+                Password<abbr title="required">*</abbr>
+              </label>
+              <input type="password" name="Password" placeholder="My-password" required>
+          </div>
+          <div>
+              <label for="Telephone_number">
+                Telephone number (optional)
+              </label>
+              <input type="number" name="Telephone_number" placeholder="333-3333333">
+          </div>
+    </fieldset>
+      <br>
+    <div>
+    <fieldset>
+      <legend class="legend_class">Purchase plane</legend>
+          <label for="Purchase_plan">Choose your plane</label>
+          <select name="Purchase_plan">
+            <option value="Free_plane">Free plane</option>
+            <option value="First_real_plane">First real plane</option>
+            <option value="Second_real_plane">Second real plane</option>
+          </select>
+        <br>
+        <form>
+          <ul>
+            <li>
+              <div class="plane_div" id="checkbox_plane">
+                  <input type="checkbox" name="Pro_Plane" value="Pro_Plane">
+                  <label for="Pro_Plane">Check Here If You Want a Pro Plane</label>
+              </div>
+            </li>
+          </ul>
+    </fieldset>
+      <br>
+    <fieldset>
+        <legend class="legend_class">Billing information</legend>
+          <div>
+              <label for="Credit_Card_Number">Credit Card Number:</label>
+              <input type="number" name="Credit_Card_Number" required>
+          </div>
+          <div>
+              <label for="CVC">CVC:</label>
+              <input type="number" name="CVC" required>
+          </div>
+          <div>
+              <label for="Expiration_date">Expiration date</label>
+              <input type="date" name="Expiration_date" required>
+          </div>
+          <div>
+              <label for="Address">Address:</label>
+              <input type="text" name="Address" placeholder="31th Sreet Avenue" required>
+          </div>
+          <br>
+          <button>Submit</button>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
