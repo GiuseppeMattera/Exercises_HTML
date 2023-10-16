@@ -5,96 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAV BAR</title>
     <style>
-        .navbar {
-            padding: 5px; 
-            color: white; 
-            background-color: #232529;
-        }
-        #divlist {
-            margin-left: 20px;
-        }
-        #list {
-            list-style: none; 
+        .nav {
+            background-color: #373737;
             display: flex;
         }
-        #buttonhome {
-            font-size: 20px;
-            margin-top: 5px;
-            margin-left: 25px; 
-            margin-right: 20px;
+        .nav__left {
+            display: flex;
+            margin: 10px;
         }
-        #linkhome {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-decoration: none; 
+        .nav__logo {
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+        }
+        .nav__left-item {
+            padding: 10px;
+        }
+        #search__button {
+            color: green;
+            background: none;
+            border: 2px solid green;
+            border-radius: 5px;
+            height: 38px;
+            width: 70px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        #search__bar {
+            border-radius: 5px;
+            height: 40px;
+            border: 2px solid none;
+        }
+        a {
+            text-decoration: none;
             color: whitesmoke;
-        }
-        #buttonlink {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 20px;
-            margin-top: 5px;
-            margin-left: 25px; 
-            margin-right: 20px;
-        }
-        #linklink {
-            color:lightgrey; 
-            text-decoration: none;
-        }
-        #buttondropdown {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 20px;
-            margin-top: 1px;
-            color:lightgray; 
-            margin-left: 25px; 
-            margin-right: 20px;
-        }
-        #buttondisabled {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 20px;
-            margin-top: 5px;
-            color: gray; 
-            margin-left: 25px; 
-            margin-right: 20px;
-        }
-        #searcbardiv {
-            margin-left: 600px;
-        }
-        #searchbutton {
-            border-radius: 8px;
-            background-color: #232529;
-            color: green; 
-            border: 2px solid green; 
-            padding: 10px;
-            text-decoration: none;
-        }
-        #buttonnavbar {
-            margin-right: 20px;
-            margin-top: 1px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-            font-size: 25px;
-        }
-        #searchbar {
-            border-radius: 8px;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
-        <nav class="navbar" >
-            <div id="divlist">
-                <ul id="list">
-                    <li id="buttonnavbar">Navbar</li>
-                    <li id="buttonhome"><a id="linkhome" href="#">Home</a></li>
-                    <li id="buttonlink"><a id="linklink" href="#">Link</a></li>
-                    <li id="buttondropdown">Dropdown &#9660;</li>
-                    <li id="buttondisabled">Disabled</li>
-                    <div id="searchbsar"; style="margin-left: 300px;">
-                        <input id="searchbar" type="text" placeholder="Search">
-                        <button id="searchbutton">Search</button>
-                    </div>
-                </ul>
+    <nav>
+        <div class="nav">
+            <div class="nav__logo">
+                <a href="#">Navbar</a>
             </div>
-        </nav>
+            <div class="nav__left">
+                <div class="nav__left-item">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav__left-item">
+                    <a href="#" style="opacity:0.5">Link</a>
+                </div>
+                <div class="nav__left-item">
+                    <a href="#" style="opacity:0.3">Dropdown</a>
+                </div>
+                <div class="nav__left-item">
+                    <a href="#" style="opacity:0.2">Disabled</a>
+                </div>
+            </div>
+            <div class="nav__right">
+                <div class="nav__right-search">
+                    <form>
+                        <input id="search__bar" type="search" placeholder="Search...">
+                        <button id="search__button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav> 
 </body>
 </html>
-
-<!-- FATTO DA ILYASSE LAARAJ E GIUSEPPE MATTERA -->
