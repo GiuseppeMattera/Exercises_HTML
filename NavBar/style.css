@@ -1,0 +1,37 @@
+.nav {
+    background-color: #373737;
+    display: flex;
+}
+.nav__left {
+    display: flex;
+    margin: 10px;
+}
+.nav__logo {
+    display: flex;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    font-size: 20px;
+}
+.nav__left-item {
+    padding: 10px;
+}
+#search__button {
+    color: green;
+    background: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    height: 38px;
+    width: 70px;
+    font-weight: bold;
+    margin: 10px;
+}
+#search__bar {
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid none;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
