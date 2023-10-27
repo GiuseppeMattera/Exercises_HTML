@@ -1,3 +1,29 @@
+@media (max-width: 768px){
+    .nav__left > div > a {
+        display: none;
+    }
+    .nav__right > div > form {
+        display: none;
+    }
+    .nav__right > a {
+        display: flex;
+    }
+}
+
+.nav__right-ham {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+}
+
+.nav__right-ham > span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
 .nav {
     background-color: #373737;
